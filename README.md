@@ -1,6 +1,10 @@
 # Mieti
 Aplicação para o cálculo da média do Mestrado Integrado em Engenharia de Telecomunicações e Informática da Universidade do Minho
 
+<a href="https://play.google.com/store/apps/details?id=com.github.rubensousa.mieti">
+  <img alt="Get it on Google Play"
+       src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+
 <img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="200">
 
 # License
