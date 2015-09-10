@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/table_background">
+
+            <TableRow
+                android:id="@+id/table_headers"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/table_header">
+
+                <TextView
+                    android:id="@+id/header_course"
+                    style="@style/TableHeaderStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/table_header_course" />
+
+
+                <TextView
+                    android:id="@+id/header_grade"
+                    style="@style/TableHeaderStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/table_header_grade" />
+
+                <TextView
+                    android:id="@+id/header_semester"
+                    style="@style/TableHeaderStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/table_header_semester" />
+
+                <TextView
+                    android:id="@+id/header_ects"
+                    style="@style/TableHeaderStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/table_header_ects" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/row_default_background">
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:ems="8"
+                    android:maxLines="3"
+                    android:text="@string/year1_uc1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/default_grade" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/semester_1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ects_5" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/row_default_background">
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:ems="8"
+                    android:maxLines="3"
+                    android:text="@string/year1_uc1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/default_grade" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/semester_1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ects_5" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/row_default_background">
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:ems="8"
+                    android:maxLines="3"
+                    android:text="@string/year1_uc1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/default_grade" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/semester_1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ects_5" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/row_default_background">
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:ems="8"
+                    android:maxLines="3"
+                    android:text="@string/year1_uc1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/default_grade" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/semester_1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ects_5" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/row_default_background">
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:ems="8"
+                    android:maxLines="3"
+                    android:text="@string/year1_uc1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/default_grade" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/semester_1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ects_5" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/row_default_background">
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:ems="8"
+                    android:maxLines="3"
+                    android:text="@string/year1_uc1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/default_grade" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/semester_1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ects_5" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/row_default_background">
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:ems="8"
+                    android:maxLines="3"
+                    android:text="@string/year1_uc1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/default_grade" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/semester_1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ects_5" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/row_default_background">
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:ems="8"
+                    android:maxLines="3"
+                    android:text="@string/year1_uc1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/default_grade" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/semester_1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ects_5" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/row_default_background">
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:ems="8"
+                    android:maxLines="3"
+                    android:text="@string/year1_uc1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/default_grade" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/semester_1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ects_5" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/row_default_background">
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:ems="8"
+                    android:maxLines="3"
+                    android:text="@string/year1_uc1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/default_grade" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/semester_1" />
+
+                <TextView
+                    style="@style/TableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ects_5" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tableLayout" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Mieti</string>
+    <string name="app_name_caps">MIETI</string>
+
+    <!-- Tabs -->
+    <array name="tabs">
+        <item>1.º ano</item>
+        <item>2.º ano</item>
+        <item>3.º ano</item>
+        <item>4.º ano</item>
+        <item>5.º ano</item>
+    </array>
+
+    <!-- Courses tables-->
+
+    <string name="table_header_course">Unidade Curricular</string>
+    <string name="table_header_semester">Semestre</string>
+    <string name="table_header_grade">Nota</string>
+    <string name="table_header_ects">ECTS</string>
+
+    <!-- Info table -->
+    <string name="table_info_master_average">Média do curso</string>
+    <string name="table_info_bachelor_average">Média da licenciatura</string>
+    <string name="table_info_ects">ECTS obtidos</string>
+    <string name="default_ects">0/300</string>
+
+
+    <!-- Courses -->
+    <string name="year1_uc1">Álgebra Linear EE</string>
+    <string name="year1_uc2">Análise de Circuitos</string>
+    <string name="year1_uc3">Cálculo EE</string>
+    <string name="year1_uc4">Métodos de Programação I</string>
+    <string name="year1_uc5">Sistemas de Computação</string>
+    <string name="year1_uc6">Análise Matemática EE</string>
+    <string name="year1_uc7">Estatística Aplicada</string>
+    <string name="year1_uc8">Física EE</string>
+    <string name="year1_uc9">Métodos de Programação II</string>
+    <string name="year1_uc10">Sistemas Digitais</string>
+
+    <string name="year2_uc1">Complementos de Análise Matemática EE</string>
+    <string name="year2_uc2">Eletromagnetismo EE</string>
+    <string name="year2_uc3">Eletrónica I</string>
+    <string name="year2_uc4">Microcontroladores</string>
+    <string name="year2_uc5">Paradigmas da Programação I</string>
+    <string name="year2_uc6">Eletrónica II</string>
+    <string name="year2_uc7">Investigação Operacional</string>
+    <string name="year2_uc8">Métodos Numéricos e Otimização não Linear</string>
+    <string name="year2_uc9">Paradigmas da Programação II</string>
+    <string name="year2_uc10">Teoria de Sistemas para Comunicações</string>
+
+    <string name="year3_uc1">Laboratórios de Telecomunicações e Informática I</string>
+    <string name="year3_uc2">Processamento de Sinal</string>
+    <string name="year3_uc3">Radiação, Propagação e Antenas</string>
+    <string name="year3_uc4">Redes de Computadores I</string>
+    <string name="year3_uc5">Sistemas Operativos</string>
+    <string name="year3_uc6">Laboratórios de Telecomunicações e Informática II</string>
+    <string name="year3_uc7">Processamento Digital de Sinal</string>
+    <string name="year3_uc8">Redes de Computadores II</string>
+    <string name="year3_uc9">Sistemas Distribuídos</string>
+    <string name="year3_uc10">Tecnologias de Bases de Dados</string>
+
+    <string name="year4_uc1">Codificação e Transmissão</string>
+    <string name="year4_uc2">Criptografia</string>
+    <string name="year4_uc3">Gestão de Redes</string>
+    <string name="year4_uc4">Projeto de Telecomunicações e Informática I</string>
+    <string name="year4_uc5">Sistemas de Comunicações Óticas</string>
+    <string name="year4_uc6">Projeto de Telecomunicações e Informática II</string>
+    <string name="year4_uc7">Redes Móveis</string>
+    <string name="year4_uc8">Segurança em Redes de Computadores</string>
+    <string name="year4_uc9">Sistemas de Telecomunicações</string>
+    <string name="year4_uc10">Tecnologias e Serviços Multimédia</string>
+
+    <string name="year5_uc1">Opção I</string>
+    <string name="year5_uc2">Opção II</string>
+    <string name="year5_uc3">Opção UMinho</string>
+    <string name="year5_uc4">Dissertação</string>
+
+    <string name="semester_1">1.º</string>
+    <string name="semester_2">2.º</string>4
+    <string name="annual">Anual</string>
+    <string name="default_grade">-</string>
+    <string name="ects_5">5,0</string>
+    <string name="ects_7.5">7,5</string>
+    <string name="ects_10">10,0</string>
+    <string name="ects_45">45,0</string>
+
+    <string-array name="grades">
+        <item>-</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+
+</resources>

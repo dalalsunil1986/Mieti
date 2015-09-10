@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_main_color">#3F51B5</color>
+    <color name="app_secundary_color">#303F9F</color>
+
+    <color name="app_primarylight_color">#BBDEFB</color>
+    <color name="app_primarytext_color">#212121</color>
+    <color name="app_secondarytext_color">#727272</color>
+
+    <color name="app_accent_color">#FF4081</color>
+
+    <color name="app_divider_color">#212121</color>
+
+    <color name="tab_indicator">#ffffffff</color>
+    <color name="tab_pressed">#32ffffff</color>
+    <color name="tab_not_pressed">#00ffffff</color>
+
+    <color name="table_select">#cfcfcf</color>
+    <color name="table_header">#3F51B5</color>
+    <color name="table_background">#DDDDDD</color>
+</resources>
