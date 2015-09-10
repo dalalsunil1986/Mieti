@@ -18,32 +18,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/app_main_color"
+            app:elevation="8dp"
             app:tabBackground="@drawable/tab_background"
             app:tabIndicatorColor="@android:color/white" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/white">
-
-            <include
-                android:id="@+id/infoLayout"
-                layout="@layout/activity_main_info"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:layout_alignParentBottom="true" />
-
-            <android.support.v4.view.ViewPager
-                android:id="@+id/viewPager"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_above="@id/infoLayout" />
-
-
-        </RelativeLayout>
-
 
     </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="104dp"
+        android:background="@android:color/white">
+
+        <include
+            android:id="@+id/infoLayout"
+            layout="@layout/activity_main_info"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/infoLayout" />
+
+
+    </RelativeLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>
